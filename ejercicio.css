@@ -1,0 +1,108 @@
+html, body, nav, footer {
+    font-family: 'Ubuntu', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+    width: 100%;
+}
+
+div.cabecera {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    border-bottom: 3px solid white;
+}
+
+div.cabecera h2 {
+    color: white;
+    animation-duration: 10s;
+    animation-name: cambioColor;
+}
+
+@keyframes cambioColor {
+    from { color: black; }
+    to { color: white; }
+}
+
+section {
+    margin-top: 100px;
+}
+
+/* TABLA */
+div.fila {
+    background-color: #EEE;
+}
+
+div#tabla {
+    /*display: inline-block;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.seccionCentral {
+    display: inline-block;
+}
+
+div.fila div {
+    vertical-align: middle;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    font-size: 9px;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+div.lista {
+    display: inline-block;
+    background-color: #efdb67;
+    border: 1px solid #000;
+    width: 150px;
+    margin: auto;
+}
+
+div.lista div.palabra {
+    list-style-type: none;
+}
+
+div.lista div.impar {
+    opacity: 0.7;
+}
+
+div.lista div.par {
+    opacity: 0.9;
+}
+
+div.lista div.tachado {
+    text-decoration: line-through;
+}
+
+div.cabeceraLista {
+    border-bottom: 1px dotted #000;
+}
+
+div.fila div:hover {
+    cursor: cell;
+}
+
+div.fila div.celdaCorrecta {
+    cursor: no-drop;
+}
+
+div.celdaCorrecta {
+    background-color: blue;
+}
+
+div.celdaIncorrecta {
+    background-color: #e24c31;
+}
+
+div.celdaSeleccionada {
+    background-color: #e6fc76;
+}
+
+div.celdaAyudaProfesor {
+    background-color: orange;
+}
